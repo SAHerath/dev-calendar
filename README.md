@@ -1,2 +1,1 @@
-# activity-calendar
-Activity Calendar
+# DevCalendar

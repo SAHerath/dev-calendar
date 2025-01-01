@@ -34,7 +34,7 @@
 		colLabel.appendChild(label);
 	}
 
-	const calendarData = dataGenerator("2023-12-17", "2024-12-17");
+	const calendarData = dataGenerator("2023-12-15", "2024-12-15");
 	console.log(calendarData);
 
 	const totalActivity = 505;
@@ -86,6 +86,7 @@
 	let monthPrev = null;
 	let count = 0;
 	const dateBoxes = dateContainer.children.length;
+	console.log("dateBoxes: ", dateBoxes);
 	
 	for (let index = 0; index < dateBoxes; index+=7) {
 		
@@ -96,24 +97,11 @@
 		if ((monthNo != monthPrev) ) {
 			console.log(monthPrev, count);
 			
-			// const label = document.createElement('div');
-			// label.textContent = monthNames[monthPrev];
-			// label.style.flexBasis = `calc((100% / ${totalCols}) * ${count})`;
-			// colLabel.appendChild(label);
-			
 			addMonthLabel(monthPrev, count);
 			
 			monthPrev = monthNo;
 			count = 0;
 		}
-		// else if ((dateBoxes - index) <= 7) {
-			// console.log(monthPrev, ++count);
-			
-			// const label = document.createElement('div');
-			// label.textContent = monthNames[monthPrev];
-			// label.style.flexBasis = `calc((100% / ${totalCols}) * ${count})`;
-			// colLabel.appendChild(label);
-		// }
 		
 		count++;
 		
