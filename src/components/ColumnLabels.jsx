@@ -1,7 +1,6 @@
 import React from 'react';
-import { monthNames } from '../constants';
 
-const MonthLabels = ({ calendarData, totalColumns }) => {
+const ColumnLabels = ({ calendarData, totalColumns, monthNames }) => {
   if (!calendarData.length) return null;
 
   let prevMonth = null;
@@ -39,4 +38,4 @@ const MonthLabels = ({ calendarData, totalColumns }) => {
   return <div className="col-label">{labels}</div>;
 };
 
-export default MonthLabels;
+export default ColumnLabels;

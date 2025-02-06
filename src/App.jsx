@@ -3,12 +3,18 @@ import Calendar from './Calendar';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const customColors = ['#ebedf0', '#5500ff', '#ff0055', '#30a14e', '#216e39'];
+  const customDateNames = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+  const monthNames = ['Jan', ' ', 'Mar', '', 'May', '', 'Jul', '', 'Sep', '', 'Nov', ''];
 
   return (
     <>
       <h1 style={{ textAlign: 'center' }}>DevCalendar</h1>
-      <Calendar />
+      <Calendar
+        // colorLevels={customColors}
+        // dateNames={customDateNames}
+        // monthNames={monthNames}
+      />
     </>
   )
 }

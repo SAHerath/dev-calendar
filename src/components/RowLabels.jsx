@@ -1,7 +1,6 @@
 import React from 'react';
-import { dateNames } from '../constants';
 
-const RowLabels = () => {
+const RowLabels = ({dateNames}) => {
   return (
     <div className="row-label">
       {dateNames.map((dateName, index) => (

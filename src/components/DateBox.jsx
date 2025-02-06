@@ -1,9 +1,8 @@
 import React from 'react';
-import { colorLevels } from '../constants';
 
-const DateBox = ({ date, level }) => {
+const DateBox = ({ date, level, colors }) => {
   return (
-    <div className="date-box" style={{ backgroundColor: colorLevels[level] }}>
+    <div className="date-box" style={{ backgroundColor: colors[level] }}>
       <span>{date}</span>
     </div>
   );

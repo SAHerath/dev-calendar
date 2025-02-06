@@ -1,7 +1,6 @@
 import React from 'react';
-import { colorLevels, totalActivity } from '../constants';
 
-const StatusBar = () => {
+const StatusBar = ({ colorLevels, totalActivity }) => {
   return (
     <div className="status-bar">
       <span>{totalActivity} activities in the last year</span>
